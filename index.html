@@ -3,6 +3,7 @@
   <script defer>
     let URL = "https://www.youtube.com/embed/SqrbIlUwR0U";
     const btnOnClickHandler = () => {
+      console.log(triggered);
       let iFrameObj = document.getElementById("abcd");
       let linkName = document.getElementById("name").value;
       URL = `https://www.youtube.com/embed/${linkName}`;
