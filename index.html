@@ -3,6 +3,9 @@
   <style>
     body {
     text-align:center;
+    },
+    grid-container {
+    display: flex;  
     }
   </style>
   <script defer>
@@ -18,10 +21,12 @@
   </script>
 </head>
 <body>
-  <p>Sample Link: "https://www.youtube.com/embed/<span style="color:white;background-color:black">SqrbIlUwR0U</span>"</p>
-  <p>Paste the video ID in the textbox</p>
-  <input id="name" type="text"></input>
-  <button onclick="btnOnClickHandler()">Load</button>
+  <p>"https://www.youtube.com/embed/<span style="color:white;background-color:black">SqrbIlUwR0U</span>"</p>
+  <div class="flex-container">
+    <label>Video ID:</label>
+    <input id="name" type="text"></input>
+    <button onclick="btnOnClickHandler()">Load</button>
+  </div>
   <hr>
   <iframe id="abcd" width="560" height="315" src="https://www.youtube.com/embed/SqrbIlUwR0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
