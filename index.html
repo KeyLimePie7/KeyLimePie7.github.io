@@ -1,7 +1,24 @@
 <html>
 <head>
+  <script defer>
+    let URL = "https://www.youtube.com/embed/SqrbIlUwR0U";
+    const btnOnClickHandler = () => {
+      let iFrameObj = document.getElementById("abcd");
+      let linkName = document.getElementById("name").value;
+      URL = `https://www.youtube.com/embed/${linkName}`;
+      iFrameObj.setAttribute("src", URL);
+    }
+  </script>
 </head>
 <body>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SqrbIlUwR0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <p>Sample link:</p>
+  <p>paste the last part in the textbox</p>
+  <p>"https://www.youtube.com/embed/SqrbIlUwR0U"</p>
+  <input id="name" type="text"></input>
+  <button onClick="btnOnClickHandler">Load</button>
+
+  <iframe id="abcd" width="560" height="315" src="https://www.youtube.com/embed/SqrbIlUwR0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 </body>
+  
 </html>
